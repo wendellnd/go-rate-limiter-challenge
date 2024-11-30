@@ -9,16 +9,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-/*
-
-type Cache interface {
-	GetIncrement(key string) (int, error)
-	SetExpire(key string, value int, duration int) error
-	Increment(key string) error
-}
-
-*/
-
 type mockCache struct {
 	data map[string]int
 }
